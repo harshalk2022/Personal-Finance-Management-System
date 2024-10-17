@@ -10,7 +10,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 
 		// Printing Welcome message
-		System.out.println("			-- Hello, welcome to Personal Finance Management System! --");
+		System.out.println("		-- Hello, welcome to Personal Finance Management System! --");
 
 		// Take user info
 		System.out.print("Enter your name: ");
