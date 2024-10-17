@@ -18,14 +18,14 @@ public class Main {
 
 		System.out.print("Enter your initial income: ");
 		double initialIncome = sc.nextDouble();
-		sc.nextLine(); 
+		sc.nextLine();
 
 		User user = new User(name, initialIncome);
 
 		boolean exit = false;
 		while (!exit) {
-
-			// Showing Menu 
+			
+			// Showing Menu
 			System.out.println("\n---------------------------");
 			System.out.println("Main Menu:");
 			System.out.println("1. Add Income");
@@ -38,7 +38,7 @@ public class Main {
 
 			System.out.print("Choose an option: ");
 			int choice = sc.nextInt();
-			sc.nextLine(); 
+			sc.nextLine();
 
 			switch (choice) {
 			case 1 -> {
@@ -56,7 +56,7 @@ public class Main {
 				// Code For Add Expense
 				System.out.print("Enter expense amount: ");
 				double expenseAmount = sc.nextDouble();
-				sc.nextLine(); 
+				sc.nextLine();
 
 				System.out.print("Enter expense category: ");
 				String category = sc.nextLine();
@@ -66,7 +66,7 @@ public class Main {
 				System.out.println("Expense added successfully.");
 			}
 
-			case 3 -> // View Balance and Summary 
+			case 3 -> // View Balance and Summary
 				user.getAccount().displaySummary();
 
 			case 4 -> // View Transactions
@@ -78,7 +78,7 @@ public class Main {
 			case 6 -> {
 				// Exit
 				exit = true;
-				System.out.println("Exiting the system. Goodbye!");
+				System.out.println("		-- Thank You! --");
 			}
 
 			default -> System.out.println("Invalid choice. Please try again.");
